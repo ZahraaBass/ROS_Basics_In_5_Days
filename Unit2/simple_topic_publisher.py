@@ -1,14 +1,6 @@
-'''
+#! /usr/bin/env python
 
-This node will publish to the topic: /cmd_vel in order to move the robot.
-First launch any gazebo simulation that subscribes to the cmd_vel topic (In my case I launched Husky using: roslaunch husky_gazebo husky_playpen.launch
-Run this node using: rosrun <package name> simple_topic_publisher
-
-'''
-
-
-# ---------------------------------------------------Start Code Here------------------------------------------------------------------------------------------------------
-#! /usr/bin/env python  #(This line will make sure that your scripts run inside the virtual environment, just copy and paste it at the beginining of each node using python.)
+# This previous line  should be at the very first line of your node, and will make sure that your scripts run inside the virtual environment, just copy and paste it at the beginining of each node using python.)
 
 
 # Import the necessary libraries, here we need:
