@@ -15,8 +15,9 @@ def listener(msg):
 # Create a node called "topic_subscriber"       
 rospy.init_node("topic_subscriber")
 
-# Subscribe to the topic: /husky_velocity_controller/odom , which has messages of type: Odometry flowing into it, and call the function listener, which prints out these msgs. 
+# IF using husky_playpen world, then Subscribe to the topic: /husky_velocity_controller/odom , which has messages of type: Odometry flowing into it, and call the function listener, which prints out these msgs. 
 sub = rospy.Subscriber('/husky_velocity_controller/odom', Odometry, listener)
+# IF exactly following the tutporials (using turtlebot2), then change "/husky_velocity_controller/odom" to "/odom"
 
 # Keep doing this till infinity:
 rospy.spin()
