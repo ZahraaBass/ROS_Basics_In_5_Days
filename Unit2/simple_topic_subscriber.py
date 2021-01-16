@@ -6,10 +6,10 @@ from nav_msgs.msg import Odometry
 # Create a function that will print the data in "msg"
 def listener(msg):
 	# To print the Whole msg on the topic:
-	# print msg
+	  print msg
 	# To print specific parts of the msg use:
 	# print msg.header
-	  print msg.pose
+	# print msg.pose
 	# print msg.orientation
 
 # Create a node called "topic_subscriber"       
